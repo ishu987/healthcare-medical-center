@@ -24,11 +24,6 @@ import UpdateAppointment from './components/AppointmentManagement/UpdateAppointm
 import PaymentDetails from './components/EmpPaymentManagement/PaymentDetails';
 import Example from './components/Example/Example';
 import EmpPaymentDetails from './components/EmpPaymentManagement/EmpPayUpdate';
-
-import AllInventory from './components/InventoryManagement/AllInventory';
-import AddInventory from './components/InventoryManagement/AddInventory';
-import InventoryDetails from './components/InventoryManagement/InventoryDetails';
-import IventoryUpdate from './components/InventoryManagement/IventoryUpdate';
 import NotFound from './components/ErrorPage/NotFound';
 
 
@@ -102,10 +97,6 @@ function App() {
             <Route path="/emp-details/:id" exact component={PaymentDetails} />
             <Route path="/example" exact component={Example} />
             <Route path="/emp-update" exact component={EmpPaymentDetails} />
-            <Route path="/all-inventory" exact component={AllInventory} />
-            <Route path="/add-inventory" exact component={AddInventory} />
-            <Route path="/update-inventory" exact component={IventoryUpdate} />
-            <Route path="/details-inventory/:id" exact component={InventoryDetails} />
             <Route exact path="/admin">
                 <AdminLogin 
                   setDrawerState={setDrawerState}
@@ -118,7 +109,6 @@ function App() {
                   setPathName={setPathName}
                 />
             </Route>
-            {/* <Route path="*" component={NotFound} /> */}
           </div>
         </Switch>
       </ThemeProvider>

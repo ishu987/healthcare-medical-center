@@ -7,7 +7,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import InfoIcon from '@material-ui/icons/Info';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import PeopleIcon from '@material-ui/icons/People';
-import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import LibraryAddIcon from '@material-ui/icons/LibraryAdd';
 import HelpIcon from '@material-ui/icons/Help';
 import YoutubeSearchedForIcon from '@material-ui/icons/YoutubeSearchedFor';
@@ -111,10 +110,6 @@ const Navbar = ({ setDrawerState, drawerState }) => {
                         <ListItem component={Link} to ="/all-reports" button>
                             <ListItemIcon className={classes.navIcon}><YoutubeSearchedForIcon /></ListItemIcon>
                             <ListItemText primary="Laboratory Management" />
-                        </ListItem>
-                        <ListItem component={Link} to ="/all-inventory" button>
-                            <ListItemIcon className={classes.navIcon}><LocalHospitalIcon /></ListItemIcon>
-                            <ListItemText primary="Inventory Management" />
                         </ListItem>
                         {userType == "admin" ? 
                         <ListItem component={Link} to="/all-employees" button>

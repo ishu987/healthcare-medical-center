@@ -9,7 +9,6 @@ import '@natscale/react-calendar/dist/main.css';
 import useStyles from './styles';
 import logo from '../../assets/logo.png';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
-import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import LibraryAddIcon from '@material-ui/icons/LibraryAdd';
 import YoutubeSearchedForIcon from '@material-ui/icons/YoutubeSearchedFor';
 
@@ -115,18 +114,6 @@ const Dashboard = ({ setPathName }) => {
                                     startIcon={<YoutubeSearchedForIcon />}
                                 >
                                     Laboratory Management
-                                </Button>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <Button
-                                    fullWidth
-                                    component={Link} to ="/all-inventory"
-                                    variant="contained"
-                                    size="large"
-                                    className={classes.menuButton}
-                                    startIcon={<LocalHospitalIcon />}
-                                >
-                                    Inventory Management
                                 </Button>
                             </Grid>
                         </Grid>
